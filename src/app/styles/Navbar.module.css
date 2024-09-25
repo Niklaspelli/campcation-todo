@@ -1,0 +1,24 @@
+.navbar {
+
+    padding: 1rem;
+}
+
+.navLinks {
+    list-style-type: none;
+    display: flex;
+    place-content: center;
+}
+
+.navLinks li {
+    margin: 0 1rem;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}

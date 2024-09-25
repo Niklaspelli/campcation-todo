@@ -1,15 +1,13 @@
 import Header from "./components/Header";
 import Image from "./components/Image";
+import NavBar from "./components/Navbar";
 
 export default function Home() {
   return (
     <>
       <main>
-        <Header />
+        <h1>Det här är din TodoApp!</h1>
         <Image />
-        <nav>
-          <a href="/todo">Todo</a>
-        </nav>
       </main>
     </>
   );
