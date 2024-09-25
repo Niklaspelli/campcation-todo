@@ -1,95 +1,34 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Header from "./components/Header";
+import Image from "./components/Image";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+    <>
+      <main>
+        <Header />
+        <Image />
+        <nav>
+          <a href="/todo">Todo</a>
+        </nav>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
+
+/* Detta kodprov är tänkt att max ta 1-2h. Tanken är att man ska få visa hur man föredrar att strukturera kod samt påvisa förståelse 
+både för dokumentation men också grundläggande koncept primärt inom React.
+
+Uppgiften är att sätta upp ett Typescript-projekt i NextJS innehållande en välkomstsida samt en simpel TODO-lista.
+Skapa en landningssida, design är upp till dig.
+Den bör innehålla minst en bild
+Det ska finnas en lista av routing länkar visade, dessa länkar bör vara lätta att addera och ta bort ifrån i componenten
+Den enda länken som måste finnas är TODO listan, kommer du på fler saker så kör på! :)
+TODO listan skall stödja:
+Man ska kunna lägga till
+Ta bort
+Den ska visa varje entitet med nyast överst
+När detta byggs, kom ihåg:
+Att separera ut CSS ifrån react templaten (dvs ingen inline-css, om du inte använder tailwind)
+Typa alla funktioner, states, context osv. Inga ‘any’ alltså
+Hellre många små komponenter än få stora
+Använd Github */

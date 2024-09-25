@@ -1,12 +1,13 @@
 :root {
-  --background: #ffffff;
+  --background: linear-gradient(to right, #8b250c, #feb47b);
+  /* Example gradient from pink to orange */
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #645d5d;
   }
 }
 
