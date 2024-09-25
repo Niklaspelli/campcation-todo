@@ -1,10 +1,10 @@
 import Header from "./components/Header";
-import NavBar from "./components/NavBar"; // Import your NavBar component
-import "./globals.css"; // Import global styles (if any)
+import NavBar from "./components/NavBar";
+import "./globals.css";
 
 export const metadata = {
-  title: "My Next.js App",
-  description: "A sample Next.js app",
+  title: "My Todo",
+  description: "A simple Next.js app",
 };
 
 export default function RootLayout({
@@ -16,8 +16,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <NavBar /> {/* Navigation bar that persists across pages */}
-        <main>{children}</main> {/* This renders the current page content */}
+        <NavBar />
+        <main>{children}</main>
       </body>
     </html>
   );

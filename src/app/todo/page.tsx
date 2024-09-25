@@ -1,5 +1,5 @@
 "use client";
-import styles from "../styles/Todo.module.css"; // Import the CSS module
+import styles from "../styles/Todo.module.css";
 import { useState } from "react";
 
 export default function TodoList() {
@@ -32,17 +32,15 @@ export default function TodoList() {
           Lägg till
         </button>
 
-        {/* Add the 'list' class here */}
         <ul className={styles.list}>
           {items.map((item, index) => (
             <li key={index} className={styles.listItem}>
               {item}
-              {/* Add the 'deleteButton' class here */}
               <button
                 className={styles.deleteButton}
                 onClick={() => deleteItem(index)}
               >
-                Delete
+                Radera
               </button>
             </li>
           ))}
